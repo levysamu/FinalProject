@@ -1,0 +1,154 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>New York State Brownfield Opportunity Areas Program</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="Sam" content="SitePoint">
+
+  <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css"/>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+<div id="backgroundDIV">
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://www.npcr.net/home.html">
+        <img alt="NPCRLogo" id="NPCRLogo" src="/NPCRLogo.png">
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://www.npcr.net/home.html">NPCR Home<span class="sr-only"></span></a></li>
+
+
+        <li class="dropdown">
+          <a href="http://www.npcr.net/about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.npcr.net/board-of-directors.html">Board of Directors</a></li>
+            <li><a href="http://www.npcr.net/history.html">History</a></li>
+            <li><a href="http://www.npcr.net/our-newsletter.html">Our Newsletter</a></li>
+            <li><a href="http://www.npcr.net/npcr-reports.html">NPCR Reports</a></li>
+          </ul>
+        </li>
+
+
+        <li class="dropdown">
+          <a href="http://www.npcr.net/legislation---policy.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Legislation & Policy<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.npcr.net/npcr-initiatives.html">NPCR Initiatives</a></li>
+            <li><a href="http://www.npcr.net/new-york-state-initiatives.html">New York State Initiatives</a></li>
+            <li><a href="http://www.npcr.net/new-york-city-initiatives.html">New York City Initiatives</a></li>
+            <li><a href="http://www.npcr.net/brownfields-tax-credits.html">Brownfields Tax Credits</a></li>
+            <li><a href="http://www.npcr.net/related-brownsfields-links.html">Related Brownfields Links</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="http://www.npcr.net/events.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.npcr.net/annual-npcr-brownfield-forum.html">Annual NPCR Brownfield Forum</a></li>
+            <li><a href="http://www.npcr.net/2015-summit.html">2015 Summit</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="http://www.npcr.net/members.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Members<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.npcr.net/become-a-member.html">Become A Member</a></li>
+          </ul>
+        </li>
+
+
+
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+       
+        <li class="active"><a href="http://www.npcr.net/donate.html">Donate<span class="sr-only"></span></a></li>
+
+        <li class="active"><a href="http://www.npcr.net/contact.html">Contact<span class="sr-only"></span></a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <div class="jumbotron">
+          <h1 align="center">
+            New York State's Brownfield Opportunity Areas Program
+            </h1>
+</div></div>
+    
+    <div class="row">
+        <div class="col-md-12">
+        <p>The BOA program is a planning program with its roots in the environmental justice movement. It targets poor communities that have large clusters of brownfields. Through extensive community outreach, the BOA program aims to give underserved communities a voice and a vision for the future of their neighborhoods.</p>
+        <p>Use the map below to get a sense of the extent of the BOA program and the characteristics of the communities that it benefits.</p>
+
+        <p align="center">
+      <button id="NYSButton" class="myButton btn btn-success">NYS</button>
+      <button id="WyandanchButton" class="myButton btn btn-success">Wyandanch</button>
+      <button id="RochesterButton" class="myButton btn btn-success">Rochester</button>
+      <button id="RomeButton" class="myButton btn btn-success">Rome</button>
+      </p>
+
+        </div></div>
+    </div>
+
+
+
+
+  <p></p>
+		</div>
+<div class="row">
+    <div class="col-md-10">
+    	<div id="BOAmap" class="BOAmap">
+      </div></div>
+    <div class="col-md-2"><div id="infoWindow" class="well">Click on a BOA for more information...</div></div>
+  </div>
+
+  <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="js/script2.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</div>
+<div id= "footer" class="row">
+  <footer class="footer">
+    <h4>New Partners for Community Revitalization, Inc.</h4>
+
+    <p>90 State Street, Suite 1009  |  
+
+    Albany, NY 12207  |  
+
+    (518) 461-3029</p>
+  </footer>
+</div>
+
+
+</body>
+</html>
