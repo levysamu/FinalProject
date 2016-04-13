@@ -16,12 +16,35 @@
 
 #infoWindow{
 		color: black;
-		height: 500px;
+		height: 250px;
 	}
+
+#imgWindow{
+		color: black;
+		height: 320px;
+	}
+
+#PovertyButton{
+		font-size: 9px;
+	}
+
+#IncomeButton{
+		font-size: 9px;
+	}
+
+#UnemploymentButton{
+		font-size: 9px;
+	}
+
+.Pic {
+    display : none; 
+    height: 245px;   
+}
+
 
 #BOAmap {
 	   	width: 100%;
-	   	height: 500px;
+	   	height: 590px;
    		color: black;
    		background-color: gray;
    		border-radius: 10px;}		

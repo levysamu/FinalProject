@@ -28,6 +28,27 @@ $(".myButton").click(function() {
       }
     });
 
+
+
+
+
+    $("#PovertyButton").click(function() {
+        $(".Pic").hide();
+        $("#povertyImg").show();
+      });
+
+    $("#IncomeButton").click(function() {
+        $(".Pic").hide();
+        $("#incomeImg").show();
+      });
+    
+    $("#UnemploymentButton").click(function() {
+        $(".Pic").hide();
+        $("#unemploymentImg").show();
+      });
+
+
+
   var BOAmap = L.map('BOAmap', {
     scrollWheelZoom: false
   }).setView(NYS, StateZoom);
