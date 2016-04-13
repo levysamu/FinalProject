@@ -33,16 +33,19 @@ $(".myButton").click(function() {
 
 
     $("#PovertyButton").click(function() {
+        $("#imgWindowText").hide();
         $(".Pic").hide();
         $("#povertyImg").show();
       });
 
     $("#IncomeButton").click(function() {
+        $("#imgWindowText").hide();
         $(".Pic").hide();
         $("#incomeImg").show();
       });
     
     $("#UnemploymentButton").click(function() {
+        $("#imgWindowText").hide();
         $(".Pic").hide();
         $("#unemploymentImg").show();
       });
