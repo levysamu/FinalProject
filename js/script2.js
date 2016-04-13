@@ -75,12 +75,12 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
           sublayer0.on('featureClick',function(e, latlng, pos, data, subLayerIndex) {
           $("#infoWindow").html(
             "<h4>" + data.boa_name + "</h4>" + 
-            "<p>Acres: " + data.acres + "</p>" +
+            "<p>Acres: " + Math.round(data.acres*10)/10 + "</p>" +
             "<p>Total Population: " + data.totpop_1 + "</p>" +
-            "<p>Household Size: " + data.hhsize + "</p>" +
-            "<p>Poverty Rate: " + data.pctpov + "</p>" +
-            "<p>Average Income: " + data.avginc + "</p>" +
-            "<p>Unemployment Rate: " + data.unemprate + "</p>" 
+            "<p>Household Size: " + Math.round(data.hhsize*10)/10 + "</p>" +
+            "<p>Poverty Rate: " + Math.round(data.pctpov*10000)/100 + "%</p>" +
+            "<p>Average Income: $" + Math.round(data.avginc) + "</p>" +
+            "<p>Unemployment Rate: " + Math.round(data.unemprate*10000)/100 + "%</p>"
           );
           });
 
@@ -91,12 +91,12 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
           sublayer1.on('featureClick',function(e, latlng, pos, data, subLayerIndex) {
           $("#infoWindow").html(
             "<h4>" + data.boa_name + "</h4>" + 
-            "<p>Acres: " + data.acres + "</p>" +
+            "<p>Acres: " + Math.round(data.acres*10)/10 + "</p>" +
             "<p>Total Population: " + data.totpop_1 + "</p>" +
-            "<p>Household Size: " + data.hhsize + "</p>" +
-            "<p>Poverty Rate: " + data.pctpov + "</p>" +
-            "<p>Average Income: " + data.avginc + "</p>" +
-            "<p>Unemployment Rate: " + data.unemprate + "</p>" 
+            "<p>Household Size: " + Math.round(data.hhsize*10)/10 + "</p>" +
+            "<p>Poverty Rate: " + Math.round(data.pctpov*10000)/100 + "%</p>" +
+            "<p>Average Income: $" + Math.round(data.avginc) + "</p>" +
+            "<p>Unemployment Rate: " + Math.round(data.unemprate*10000)/100 + "%</p>"
           );
           });
 
