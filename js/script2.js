@@ -46,17 +46,17 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
 // Used Andy Eschbacher's code from http://bl.ocks.org/ohasselblad/d9b65186664268d6dec4
           var sublayer0 = layer.getSubLayer(0);
           sublayer0.setInteraction(true);
-          sublayer0.setInteractivity("boa_name,designatio,acres,totpop_1");
+          sublayer0.setInteractivity("boa_name,designatio,acres,totpop_1,hhsize,pctpov,avginc,unemprate");
           
           sublayer0.on('featureClick',function(e, latlng, pos, data, subLayerIndex) {
           $("#infoWindow").html(
             "<h4>" + data.boa_name + "</h4>" + 
             "<p>Acres: " + data.acres + "</p>" +
             "<p>Total Population: " + data.totpop_1 + "</p>" +
-            "<p>Acres: " + data.acres + "</p>" +
-            "<p>Acres: " + data.acres + "</p>" +
-            "<p>Acres: " + data.acres + "</p>" +
-            "<p>Acres: " + data.acres + "</p>" 
+            "<p>Household Size: " + data.hhsize + "</p>" +
+            "<p>Poverty Rate: " + data.pctpov + "</p>" +
+            "<p>Average Income: " + data.avginc + "</p>" +
+            "<p>Unemployment Rate: " + data.unemprate + "</p>" 
           );
           });
 
@@ -69,10 +69,10 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
             "<h4>" + data.boa_name + "</h4>" + 
             "<p>Acres: " + data.acres + "</p>" +
             "<p>Total Population: " + data.totpop_1 + "</p>" +
-            "<p>Acres: " + data.acres + "</p>" +
-            "<p>Acres: " + data.acres + "</p>" +
-            "<p>Acres: " + data.acres + "</p>" +
-            "<p>Acres: " + data.acres + "</p>" 
+            "<p>Household Size: " + data.hhsize + "</p>" +
+            "<p>Poverty Rate: " + data.pctpov + "</p>" +
+            "<p>Average Income: " + data.avginc + "</p>" +
+            "<p>Unemployment Rate: " + data.unemprate + "</p>" 
           );
           });
 
