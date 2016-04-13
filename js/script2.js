@@ -62,7 +62,7 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png',{
 
           var sublayer1 = layer.getSubLayer(1);
           sublayer1.setInteraction(true);
-          sublayer1.setInteractivity("boa_name,designatio,acres,totpop_1");
+          sublayer1.setInteractivity("boa_name,designatio,acres,totpop_1,hhsize,pctpov,avginc,unemprate");
           
           sublayer1.on('featureClick',function(e, latlng, pos, data, subLayerIndex) {
           $("#infoWindow").html(
